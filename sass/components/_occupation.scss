@@ -1,0 +1,47 @@
+// occupation
+
+.occupation__title {
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    color: var(--first-text-color);
+    font-size: var(--large-text-size);
+    line-height: 1.17;
+    text-align: center;
+}
+
+.occupation__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+// occupation__item
+
+.occupation__item {
+    & + & {
+        margin-left: 30px;
+    }
+}
+
+.occupation__thumb {
+    position: relative;
+}
+
+.occupation__about {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+
+    background-color: var(--text-back-color);
+}
+
+.occupation__subtitle {
+    margin-bottom: 27px;
+    margin-top: 27px;
+
+    color: var(--primary-white-color);
+    font-size: var(--small-text-size);
+    line-height: 1.15;
+    text-transform: uppercase;
+}

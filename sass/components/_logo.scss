@@ -1,0 +1,36 @@
+// logo
+
+.logo {
+    font-family: Raleway, sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+    font-weight: 700;
+}
+
+.logo__web {
+    color: var(--accent-color);
+}
+
+// logo--
+
+.logo--dark {
+    margin-right: 93px;
+
+    color: var(--black-color);
+}
+
+.logo--light {
+    display: inline-block; /* for not all parent weight */
+
+    margin-right: 0;
+    margin-bottom: 20px;
+
+    color: var(--primary-white-color);
+}
+
+.logo--dark:active,
+.logo--dark:visited,
+.logo--dark:active,
+.logo--dark:visited {
+    color: var(--black-color);
+}

@@ -1,0 +1,32 @@
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+
+    & .nav-list__item + .nav-list__item {
+        margin-left: 50px;
+    }
+}
+
+.nav-list__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--first-text-color);
+    font-weight: 500;
+    font-size: var(--small-text-size);
+    line-height: 1.14;
+    letter-spacing: var(--small-letter-spacing);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+
+    text-decoration: none;
+    transition: color var(--transition-duration) var(--timing-function);
+}

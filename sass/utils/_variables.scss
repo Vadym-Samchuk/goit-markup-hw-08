@@ -1,0 +1,59 @@
+:root {
+    --primary-white-color: #ffffff;
+    --black-color: #000000;
+
+    --main-border-color: #ececec;
+    --second-border-color: #eeeeee;
+    --third-border-color: #afb1b8;
+
+    --outline-border-color: rgba(0, 0, 0, 0.1);
+    --online-second-border: rgba(255, 255, 255, 0.3);
+    --second-border-color: rgba(33, 33, 33, 0.2);
+    --first-text-color: #212121;
+    --second-text-color: #757575;
+    --footer-text-color: rgba(255, 255, 255, 0.6);
+    --placeholder-text: rgba(117, 117, 117, 0.5);
+
+    --accent-color: #2196f3;
+
+    --back-color: #2f303a;
+    --second-back-color: #f5f4fa;
+    --prime-back-color: #188ce8;
+    --main-back-color: #c4c4c4;
+    --social-back-color: rgba(255, 255, 255, 0.1);
+    --text-back-color: rgba(47, 48, 58, 0.8);
+
+    --backdrop-back-color: rgba(0, 0, 0, 0.2);
+
+    --main-overlay: rgb(47, 48, 58, 0.4);
+    --item-overlay: rgba(33, 150, 243, 0.9);
+
+    --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    --card-progect-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+    --button-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+
+    --modal-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    --main-fill: #afb1b8;
+
+    --little-text-size: 12px;
+    --small-text-size: 14px;
+    --standart-text-size: 16px;
+    --normal-text-size: 18px;
+    --medium-text-size: 20px;
+    --large-text-size: 36px;
+    --extra-large-text-size: 44px;
+
+    --little-letter-spacing: 0.01em;
+    --small-letter-spacing: 0.02em;
+    --main-letter-spacing: 0.03em;
+    --medium-letter-spacing: 0.06em;
+
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-duration: 250ms;
+}
