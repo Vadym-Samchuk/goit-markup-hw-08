@@ -1,29 +1,47 @@
 .site-contacts {
-    display: flex;
-    align-items: center;
+    display: none;
+
     margin-left: auto;
 
     & .site-contacts__item + .site-contacts__item {
-        margin-left: 50px;
+        margin-top: 10px;
     }
 
     & .link {
         display: flex;
         align-items: center;
 
-        padding-top: 32px;
-        padding-bottom: 32px;
-
         color: var(--second-text-color);
         font-weight: 500;
         font-size: var(--small-text-size);
         line-height: 1.14;
         letter-spacing: var(--small-letter-spacing);
+
+        @include desk {
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
     }
 
     & .link:hover,
     & .link:focus {
         color: var(--accent-color);
+    }
+
+    @include tab {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @include desk {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        & .site-contacts__item + .site-contacts__item {
+            margin-left: 50px;
+            margin-top: 0px;
+        }
     }
 }
 

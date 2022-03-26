@@ -1,18 +1,33 @@
 .client__title {
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    text-align: center;
 
     color: var(--first-text-color);
-    font-size: var(--large-text-size);
-    line-height: 1.17;
-    text-align: center;
+
+    font-size: var(--middle-text-size);
+    line-height: 1.18;
+
+    @include desk {
+        margin-bottom: 50px;
+        font-size: var(--large-text-size);
+        line-height: 1.17;
+    }
 }
 
 // client__list
 
 .client__list {
     display: flex;
+    flex-direction: column;
+
+    @include tel {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
     justify-content: center;
+
     margin-top: 0;
     margin-bottom: 0;
     padding: 0;
@@ -21,11 +36,57 @@
 // client__item
 
 .client__item {
-    width: 170px;
     height: 92px;
+    width: 210px;
 
-    & + & {
+    margin-left: auto;
+    margin-right: auto;
+
+    &:nth-child(n + 2) {
+        margin-top: 30px;
+    }
+
+    @include tel {
+        &:nth-child(n + 2) {
+            margin-top: 0px;
+        }
+
+        &:nth-child(2n) {
+            margin-left: 30px;
+        }
+
+        &:nth-child(n + 3) {
+            margin-top: 30px;
+        }
+    }
+
+    @include tab {
+        width: 226px;
         margin-left: 30px;
+
+        &:nth-child(n + 3) {
+            margin-top: 0px;
+        }
+
+        &:nth-child(3n + 1) {
+            margin-left: 0px;
+        }
+
+        &:nth-child(n + 4) {
+            margin-top: 30px;
+        }
+    }
+
+    @include desk {
+        width: 170px;
+
+        &:nth-child(n + 4) {
+            margin-top: 0px;
+        }
+
+        & + & {
+            margin-left: 30px;
+        }
     }
 }
 

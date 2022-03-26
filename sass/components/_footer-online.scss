@@ -1,19 +1,36 @@
 // footer__online
 
 .footer__online {
-    margin-left: 93px;
+    margin-top: 60px;
+    text-align: center;
+
+    @include desk {
+        margin-top: 0;
+        margin-left: 93px;
+        padding-top: 12px;
+
+        text-align: left;
+    }
 }
 
 // footer_online-form
 
 .footer__online-form {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include desk {
+        flex-direction: row;
+        align-items: stretch;
+    }
 }
 
 // footer_online-input
 
 .footer__online-input {
-    width: 358px;
+    width: 100%;
+    max-width: 450px;
     height: 50px;
     border-radius: 4px;
     padding-left: 16px;
@@ -41,6 +58,10 @@
     &:focus::placeholder {
         color: var(--accent-color);
     }
+
+    @include desk {
+        width: 358px;
+    }
 }
 
 // footer_online-button
@@ -52,7 +73,12 @@
     width: 200px;
     padding-right: 28px;
     padding-left: 30px;
-    margin-left: 12px;
+    margin-top: 20px;
+
+    @include desk {
+        margin-top: 0;
+        margin-left: 12px;
+    }
 }
 
 // footer_online-button-icon

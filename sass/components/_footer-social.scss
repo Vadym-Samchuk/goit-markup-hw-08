@@ -1,7 +1,20 @@
 // footer__social
 
 .footer__social {
-    margin-left: 70px;
+    margin-top: 60px;
+    text-align: center;
+
+    @include tab {
+        margin-top: 0;
+        padding-top: 5px;
+    }
+
+    @include desk {
+        padding-top: 12px;
+        margin-top: 0;
+        margin-left: 70px;
+        text-align: left;
+    }
 }
 
 // footer__subtitle
@@ -23,10 +36,15 @@
 
 .footer__social-list {
     display: flex;
+    justify-content: center;
 
     font-style: normal;
     font-size: var(--small-text-size);
     line-height: 1.71;
+
+    @include desk {
+        justify-content: left;
+    }
 }
 
 // footer__social-item

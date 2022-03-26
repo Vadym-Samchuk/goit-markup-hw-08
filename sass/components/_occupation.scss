@@ -1,5 +1,13 @@
 // occupation
 
+.occupation {
+    display: none;
+
+    @include desk {
+        display: block;
+    }
+}
+
 .occupation__title {
     margin-top: 0;
     margin-bottom: 50px;

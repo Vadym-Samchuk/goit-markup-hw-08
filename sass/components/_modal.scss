@@ -5,7 +5,8 @@
     top: 50%;
     left: 50%;
 
-    width: 528px;
+    min-width: 280px;
+    max-width: 450px;
     min-height: 580px;
     padding: 40px;
 
@@ -15,6 +16,15 @@
 
     transform: translate(-50%, -50%) scale(1);
     transition: transform var(--transition-duration) var(--timing-function);
+
+    @include tel {
+        width: 450px;
+    }
+
+    @include desk {
+        min-width: 528px;
+        width: 528px;
+    }
 }
 
 .backdrop.is-hidden .modal {
@@ -59,6 +69,8 @@
     font-size: var(--medium-text-size);
     line-height: 1.15;
     font-weight: 700;
+
+    text-align: center;
 }
 
 // modal__form-field
@@ -148,9 +160,16 @@
     display: flex;
     align-items: center;
 
-    font-size: var(--small-text-size);
+    font-size: var(--little-text-size);
     line-height: 1.17;
+    letter-spacing: var(--small-letter-spacing);
+
     color: var(--second-text-color);
+
+    @include desk {
+        font-size: var(--small-text-size);
+        letter-spacing: var(--little-letter-spacing);
+    }
 }
 
 .modal__check-wrap {
@@ -190,10 +209,14 @@
 /* ----- modal__check-link ----- */
 
 .modal__check-link {
-    font-size: var(--small-text-size);
+    font-size: var(--little-text-size);
     line-height: 1.17;
 
     color: var(--accent-color);
+
+    @include desk {
+        font-size: var(--small-text-size);
+    }
 }
 
 /* ----- modal__form button ----- */

@@ -4,15 +4,21 @@
 }
 
 .nav-list {
-    display: flex;
+    display: none;
+    margin-left: 93px;
 
     & .nav-list__item + .nav-list__item {
         margin-left: 50px;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
     }
 }
 
 .nav-list__link {
     display: block;
+
     padding-top: 32px;
     padding-bottom: 32px;
 

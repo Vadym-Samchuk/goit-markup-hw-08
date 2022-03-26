@@ -24,29 +24,28 @@
         <!--header-->
         <header class="header">
             <div class="container header__container">
-                <!--navigation-->
                 <nav class="navigation">
-                    <!-- logo -->
                     <a class="logo logo--dark link" href="./index.html"
                         ><span class="logo__web">Web</span>Studio</a
                     >
-                    <!-- menu -->
+
                     <ul class="nav-list list">
                         <li class="nav-list__item">
                             <a href="./index.html" class="nav-list__link">Студия</a>
                         </li>
+
                         <li class="nav-list__item">
                             <a href="./portfolio.html" class="nav-list__link current"
                                 >Портфолио</a
                             >
                         </li>
+
                         <li class="nav-list__item">
                             <a href="" class="nav-list__link">Контакты</a>
                         </li>
                     </ul>
                 </nav>
 
-                <!-- contacts -->
                 <ul class="site-contacts list">
                     <li class="site-contacts__item">
                         <a
@@ -59,6 +58,7 @@
                             info@devstudio.com
                         </a>
                     </li>
+
                     <li class="site-contacts__item">
                         <a
                             class="site-contacts__smartphone link"
@@ -75,6 +75,76 @@
                         >
                     </li>
                 </ul>
+
+                <button type="button" class="menu-open-btn">
+                    <svg class="menu-open-btn-icon" width="24" height="16">
+                        <use href="./images/icons.svg#icon-mob-menu"></use>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="mob-menu is-hidden">
+                <div class="mob-menu-container">
+                    <button class="menu-close-btn" type="button">
+                        <svg class="menu-close-icon" width="18" height="18">
+                            <use href="./images/icons.svg#icon-close"></use>
+                        </svg>
+                    </button>
+
+                    <ul class="mob-menu-list list">
+                        <li class="mob-menu-list__item">
+                            <a href="./index.html" class="mob-menu-list__link">Студия</a>
+                        </li>
+
+                        <li class="mob-menu-list__item">
+                            <a
+                                href="./portfolio.html"
+                                class="mob-menu-list__link current-mob"
+                                >Портфолио</a
+                            >
+                        </li>
+
+                        <li class="mob-menu-list__item">
+                            <a href="" class="mob-menu-list__link">Контакты</a>
+                        </li>
+                    </ul>
+
+                    <div class="mob-menu-bottom">
+                        <ul class="mob-menu-contacts list">
+                            <li class="mob-menu-contacts__item">
+                                <a
+                                    class="mob-menu-contacts__smartphone link"
+                                    href="tel:+380961111111"
+                                >
+                                    +38 096 111 11 11</a
+                                >
+                            </li>
+                            <li class="mob-menu-contacts__item">
+                                <a
+                                    class="mob-menu-contacts__email link"
+                                    href="mailto:info@devstudio.com"
+                                >
+                                    info@devstudio.com
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="mob-soc-list list">
+                            <li class="mob-soc-list__item">
+                                <a href="" class="mob-soc-list__link">Instagram</a>
+                            </li>
+                            <li class="mob-soc-list__item">
+                                <a href="" class="mob-soc-list__link">Twitter</a>
+                            </li>
+                            <li class="mob-soc-list__item">
+                                <a href="" class="mob-soc-list__link">Facebook</a>
+                            </li>
+                            <li class="mob-soc-list__item">
+                                <a href="" class="mob-soc-list__link">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </header>
 
@@ -121,13 +191,45 @@
                         <li class="project__item">
                             <a href="" class="project__link link">
                                 <div class="project__thumb">
-                                    <img
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/tehnokrjak.jpg    1x,
+                                                ./images/tehnokrjak-2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/tehnokrjak-tab.jpg    1x,
+                                                ./images/tehnokrjak-tab-2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/tehnokrjak-mob.jpg    1x,
+                                                ./images/tehnokrjak-mob-2x.jpg 2x
+                                            "
+                                            media="(max-width: 768px)"
+                                        />
+                                        <img
+                                            class="image"
+                                            src="./images/tehnokrjak.jpg"
+                                            alt="скрин сайта"
+                                        />
+                                    </picture>
+                                    <!-- <img
                                         class="image"
+                                        srcset="
+                                            ./images/tehnokrjak.jpg    1x,
+                                            ./images/tehnokrjak-2x.jpg 2x
+                                        "
                                         src="./images/tehnokrjak.jpg"
                                         alt="скрин сайта"
                                         width="370"
                                         height="294"
-                                    />
+                                    /> -->
                                     <div class="project__item-overlay">
                                         <p class="project__item-overlay-text">
                                             Технокряк это современная площадка
@@ -148,13 +250,41 @@
                         <li class="project__item">
                             <a href="" class="project__link link">
                                 <div class="project__thumb">
-                                    <img
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/basket.jpg    1x,
+                                                ./images/basket-2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/basket-tab.jpg    1x,
+                                                ./images/basket-tab-2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/basket-mob.jpg    1x,
+                                                ./images/basket-mob-2x.jpg 2x
+                                            "
+                                            media="(max-width: 768px)"
+                                        />
+                                        <img
+                                            class="image"
+                                            src="./images/basket.jpg"
+                                            alt="скрин сайта"
+                                        />
+                                    </picture>
+                                    <!-- <img
                                         class="image"
                                         src="./images/basket.jpg"
                                         alt="два баскетболиста"
                                         width="370"
                                         height="294"
-                                    />
+                                    /> -->
                                     <div class="project__item-overlay">
                                         <p class="project__item-overlay-text">
                                             Технокряк это современная площадка
@@ -177,13 +307,41 @@
                         <li class="project__item">
                             <a href="" class="project__link link">
                                 <div class="project__thumb">
-                                    <img
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/seafood.jpg    1x,
+                                                ./images/seafood-2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/seafood-tab.jpg    1x,
+                                                ./images/seafood-tab-2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/seafood-mob.jpg    1x,
+                                                ./images/seafood-mob-2x.jpg 2x
+                                            "
+                                            media="(max-width: 768px)"
+                                        />
+                                        <img
+                                            class="image"
+                                            src="./images/seafood.jpg"
+                                            alt="скрин сайта"
+                                        />
+                                    </picture>
+                                    <!-- <img
                                         class="image"
                                         src="./images/seafood.jpg"
                                         alt="емблема Seafood"
                                         width="370"
                                         height="294"
-                                    />
+                                    /> -->
                                     <div class="project__item-overlay">
                                         <p class="project__item-overlay-text">
                                             Технокряк это современная площадка
@@ -204,13 +362,41 @@
                         <li class="project__item">
                             <a href="" class="project__link link">
                                 <div class="project__thumb">
-                                    <img
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/headphones.jpg    1x,
+                                                ./images/headphones-2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/headphones-tab.jpg    1x,
+                                                ./images/headphones-tab-2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/headphones-mob.jpg    1x,
+                                                ./images/headphones-mob-2x.jpg 2x
+                                            "
+                                            media="(max-width: 768px)"
+                                        />
+                                        <img
+                                            class="image"
+                                            src="./images/headphones.jpg"
+                                            alt="скрин сайта"
+                                        />
+                                    </picture>
+                                    <!-- <img
                                         class="image"
                                         src="./images/headphones.jpg"
                                         alt="наушники"
                                         width="370"
                                         height="294"
-                                    />
+                                    /> -->
                                     <div class="project__item-overlay">
                                         <p class="project__item-overlay-text">
                                             Технокряк это современная площадка
@@ -231,13 +417,41 @@
                         <li class="project__item">
                             <a href="" class="project__link link">
                                 <div class="project__thumb">
-                                    <img
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/boxes.jpg    1x,
+                                                ./images/boxes-2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/boxes-tab.jpg    1x,
+                                                ./images/boxes-tab-2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/boxes-mob.jpg    1x,
+                                                ./images/boxes-mob-2x.jpg 2x
+                                            "
+                                            media="(max-width: 768px)"
+                                        />
+                                        <img
+                                            class="image"
+                                            src="./images/boxes.jpg"
+                                            alt="скрин сайта"
+                                        />
+                                    </picture>
+                                    <!-- <img
                                         class="image"
                                         src="./images/boxes.jpg"
                                         alt="коробки"
                                         width="370"
                                         height="294"
-                                    />
+                                    /> -->
                                     <div class="project__item-overlay">
                                         <p class="project__item-overlay-text">
                                             Технокряк это современная площадка
@@ -258,13 +472,41 @@
                         <li class="project__item">
                             <a href="" class="project__link link">
                                 <div class="project__thumb">
-                                    <img
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/monitor.jpg    1x,
+                                                ./images/monitor-2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/monitor-tab.jpg    1x,
+                                                ./images/monitor-tab-2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/monitor-mob.jpg    1x,
+                                                ./images/monitor-mob-2x.jpg 2x
+                                            "
+                                            media="(max-width: 768px)"
+                                        />
+                                        <img
+                                            class="image"
+                                            src="./images/monitor.jpg"
+                                            alt="скрин сайта"
+                                        />
+                                    </picture>
+                                    <!-- <img
                                         class="image"
                                         src="./images/monitor.jpg"
                                         alt="монитор"
                                         width="370"
                                         height="294"
-                                    />
+                                    /> -->
                                     <div class="project__item-overlay">
                                         <p class="project__item-overlay-text">
                                             Технокряк это современная площадка
@@ -287,13 +529,41 @@
                         <li class="project__item">
                             <a href="" class="project__link link">
                                 <div class="project__thumb">
-                                    <img
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/book.jpg    1x,
+                                                ./images/book-2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/book-tab.jpg    1x,
+                                                ./images/book-tab-2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/book-mob.jpg    1x,
+                                                ./images/book-mob-2x.jpg 2x
+                                            "
+                                            media="(max-width: 768px)"
+                                        />
+                                        <img
+                                            class="image"
+                                            src="./images/book.jpg"
+                                            alt="скрин сайта"
+                                        />
+                                    </picture>
+                                    <!-- <img
                                         class="image"
                                         src="./images/book.jpg"
                                         alt="книга"
                                         width="370"
                                         height="294"
-                                    />
+                                    /> -->
                                     <div class="project__item-overlay">
                                         <p class="project__item-overlay-text">
                                             Технокряк это современная площадка
@@ -316,13 +586,41 @@
                         <li class="project__item">
                             <a href="" class="project__link link">
                                 <div class="project__thumb">
-                                    <img
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/label.jpg    1x,
+                                                ./images/label-2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/label-tab.jpg    1x,
+                                                ./images/label-tab-2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/label-mob.jpg    1x,
+                                                ./images/label-mob-2x.jpg 2x
+                                            "
+                                            media="(max-width: 768px)"
+                                        />
+                                        <img
+                                            class="image"
+                                            src="./images/label.jpg"
+                                            alt="скрин сайта"
+                                        />
+                                    </picture>
+                                    <!-- <img
                                         class="image"
                                         src="./images/label.jpg"
                                         alt="эмблема"
                                         width="370"
                                         height="294"
-                                    />
+                                    /> -->
                                     <div class="project__item-overlay">
                                         <p class="project__item-overlay-text">
                                             Технокряк это современная площадка
@@ -343,13 +641,41 @@
                         <li class="project__item">
                             <a href="" class="project__link link">
                                 <div class="project__thumb">
-                                    <img
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/notebook.jpg    1x,
+                                                ./images/notebook-2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/notebook-tab.jpg    1x,
+                                                ./images/notebook-tab-2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/notebook-mob.jpg    1x,
+                                                ./images/notebook-mob-2x.jpg 2x
+                                            "
+                                            media="(max-width: 768px)"
+                                        />
+                                        <img
+                                            class="image"
+                                            src="./images/notebook.jpg"
+                                            alt="скрин сайта"
+                                        />
+                                    </picture>
+                                    <!-- <img
                                         class="image"
                                         src="./images/notebook.jpg"
                                         alt="ноутбук"
                                         width="370"
                                         height="294"
-                                    />
+                                    /> -->
                                     <div class="project__item-overlay">
                                         <p class="project__item-overlay-text">
                                             Технокряк это современная площадка
@@ -374,109 +700,123 @@
         <!--footer-->
         <footer class="footer">
             <div class="footer__block container">
-                <!--  -->
-                <div class="footer__logo-address">
-                    <!-- logo -->
-                    <a class="logo logo--light link" href="./index.html"
-                        ><span class="logo__web">Web</span>Studio</a
-                    >
+                <div class="footer__box">
+                    <div class="footer__logo-address">
+                        <a class="logo logo--light link" href="./index.html"
+                            ><span class="logo__web">Web</span>Studio</a
+                        >
 
-                    <!-- address -->
-                    <address class="footer__address address">
-                        <!-- address__list -->
-                        <ul class="address__list list">
-                            <li class="address__item">
+                        <address class="footer__address address">
+                            <ul class="address__list list">
+                                <li class="address__item">
+                                    <a
+                                        class="address__link--light link"
+                                        target="_blank"
+                                        rel="nofollow"
+                                        href="https://goo.gl/maps/Q8oSSp6cbLLiqwUZA"
+                                        >г. Киев, пр-т Леси Украинки, 26
+                                    </a>
+                                </li>
+
+                                <li class="address__item">
+                                    <a
+                                        class="address__link--dark link"
+                                        href="mailto:info@devstudio.com"
+                                        >info@devstudio.com</a
+                                    >
+                                </li>
+
+                                <li class="address__item">
+                                    <a
+                                        class="address__link--dark link"
+                                        href="tel:+380961111111"
+                                        >+38 099 111 11 11</a
+                                    >
+                                </li>
+                            </ul>
+                        </address>
+                    </div>
+
+                    <div class="footer__social">
+                        <h3 class="footer__subtitle">присоединяйтесь</h3>
+                        <ul class="footer__social-list list">
+                            <li class="footer__social-item">
                                 <a
-                                    class="address__link--light link"
+                                    class="footer__social-link"
                                     target="_blank"
                                     rel="nofollow"
-                                    href="https://goo.gl/maps/Q8oSSp6cbLLiqwUZA"
-                                    >г. Киев, пр-т Леси Украинки, 26
+                                    href=""
+                                >
+                                    <svg
+                                        class="footer__social-icon"
+                                        width="20"
+                                        height="20"
+                                    >
+                                        <use
+                                            href="./images/icons.svg#icon-instagram"
+                                        ></use>
+                                    </svg>
                                 </a>
                             </li>
 
-                            <li class="address__item">
+                            <li class="footer__social-item">
                                 <a
-                                    class="address__link--dark link"
-                                    href="mailto:info@devstudio.com"
-                                    >info@devstudio.com</a
+                                    class="footer__social-link"
+                                    target="_blank"
+                                    rel="nofollow"
+                                    href=""
                                 >
+                                    <svg
+                                        class="footer__social-icon"
+                                        width="20"
+                                        height="20"
+                                    >
+                                        <use
+                                            href="./images/icons.svg#icon-twitter"
+                                        ></use></svg
+                                ></a>
                             </li>
 
-                            <li class="address__item">
+                            <li class="footer__social-item">
                                 <a
-                                    class="address__link--dark link"
-                                    href="tel:+380961111111"
-                                    >+38 099 111 11 11</a
+                                    class="footer__social-link"
+                                    target="_blank"
+                                    rel="nofollow"
+                                    href=""
                                 >
+                                    <svg
+                                        class="footer__social-icon"
+                                        width="20"
+                                        height="20"
+                                    >
+                                        <use
+                                            href="./images/icons.svg#icon-facebook"
+                                        ></use>
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li class="footer__social-item">
+                                <a
+                                    class="footer__social-link"
+                                    target="_blank"
+                                    rel="nofollow"
+                                    href=""
+                                >
+                                    <svg
+                                        class="footer__social-icon"
+                                        width="20"
+                                        height="20"
+                                    >
+                                        <use
+                                            href="./images/icons.svg#icon-linkedin"
+                                        ></use></svg
+                                ></a>
                             </li>
                         </ul>
-                    </address>
+                    </div>
                 </div>
 
-                <!-- social -->
-                <div class="footer__social">
-                    <h3 class="footer__subtitle">присоединяйтесь</h3>
-                    <!-- footer__social-list -->
-                    <ul class="footer__social-list list">
-                        <!-- footer__social-item -->
-                        <li class="footer__social-item">
-                            <a
-                                class="footer__social-link"
-                                target="_blank"
-                                rel="nofollow"
-                                href=""
-                            >
-                                <svg class="footer__social-icon" width="20" height="20">
-                                    <use href="./images/icons.svg#icon-instagram"></use>
-                                </svg>
-                            </a>
-                        </li>
-
-                        <li class="footer__social-item">
-                            <a
-                                class="footer__social-link"
-                                target="_blank"
-                                rel="nofollow"
-                                href=""
-                            >
-                                <svg class="footer__social-icon" width="20" height="20">
-                                    <use
-                                        href="./images/icons.svg#icon-twitter"
-                                    ></use></svg
-                            ></a>
-                        </li>
-
-                        <li class="footer__social-item">
-                            <a
-                                class="footer__social-link"
-                                target="_blank"
-                                rel="nofollow"
-                                href=""
-                            >
-                                <svg class="footer__social-icon" width="20" height="20">
-                                    <use href="./images/icons.svg#icon-facebook"></use>
-                                </svg>
-                            </a>
-                        </li>
-
-                        <li class="footer__social-item">
-                            <a
-                                class="footer__social-link"
-                                target="_blank"
-                                rel="nofollow"
-                                href=""
-                            >
-                                <svg class="footer__social-icon" width="20" height="20">
-                                    <use
-                                        href="./images/icons.svg#icon-linkedin"
-                                    ></use></svg
-                            ></a>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- online -->
                 <div class="footer__online">
                     <h3 class="footer__subtitle">Подпишитесь на рассылку</h3>
                     <form class="footer__online-form">
@@ -504,5 +844,8 @@
                 </div>
             </div>
         </footer>
+
+        <!-- script -->
+        <script src="./js/menu.js"></script>
     </body>
 </html>

@@ -5,15 +5,45 @@
     background-color: var(--back-color);
 }
 
+// footer__block
+
 .footer__block {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+
+    // align-items: baseline;
+
+    @include desk {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+// footer__box
+
+.footer__box {
+    display: flex;
+    flex-direction: column;
+
+    @include tab {
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
 
 // footer__logo-address
 
 .footer__logo-address {
-    width: 230px;
+    text-align: center;
+
+    @include desk {
+        width: 230px;
+
+        margin-left: 0;
+        margin-right: 0;
+
+        text-align: left;
+    }
 }
 
 // address

@@ -9,11 +9,14 @@
     background-color: var(--backdrop-back-color);
 
     opacity: 1;
+
+    overflow-y: scroll;
+
     transition: opacity var(--transition-duration) var(--timing-function),
         visibility var(--transition-duration) var(--timing-function);
 }
 
-.backdrop.is-hidden {
+.is-hidden {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;

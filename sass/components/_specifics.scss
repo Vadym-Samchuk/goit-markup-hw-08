@@ -1,13 +1,44 @@
 .specifics-list {
     display: flex;
+    flex-direction: column;
+
+    @include tab {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
 
 .specifics-list__item {
     display: block;
-    flex-basis: 270px;
+    margin-left: 0;
 
     & + & {
-        margin-left: 30px;
+        margin-top: 30px;
+    }
+
+    @include tab {
+        width: 354px;
+
+        & + & {
+            margin-top: 0;
+        }
+
+        &:nth-child(2n) {
+            margin-left: 30px;
+        }
+
+        &:nth-child(n + 3) {
+            margin-top: 30px;
+        }
+    }
+
+    @include desk {
+        width: 270px;
+
+        & + & {
+            margin-top: 0;
+            margin-left: 30px;
+        }
     }
 }
 
@@ -16,12 +47,19 @@
     align-items: center;
     justify-content: center;
 
-    width: 270px;
     height: 120px;
     border-radius: 4px;
     margin-bottom: 30px;
 
     background-color: var(--second-back-color);
+
+    @include tab {
+        width: 354px;
+    }
+
+    @include desk {
+        width: 270px;
+    }
 }
 
 .specifics-list__subtitle {
