@@ -978,6 +978,7 @@ body.modal-is-open {
   .footer__block {
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: baseline;
   }
 }
 
@@ -990,6 +991,7 @@ body.modal-is-open {
   .footer__box {
     flex-direction: row;
     justify-content: space-around;
+    align-items: baseline;
   }
 }
 
@@ -1043,13 +1045,11 @@ body.modal-is-open {
 @media screen and (min-width: 768px) {
   .footer__social {
     margin-top: 0;
-    padding-top: 5px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer__social {
-    padding-top: 12px;
     margin-top: 0;
     margin-left: 70px;
     text-align: left;
@@ -1123,7 +1123,6 @@ body.modal-is-open {
   .footer__online {
     margin-top: 0;
     margin-left: 93px;
-    padding-top: 12px;
     text-align: left;
   }
 }

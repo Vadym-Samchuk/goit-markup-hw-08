@@ -6,11 +6,9 @@
 
     @include tab {
         margin-top: 0;
-        padding-top: 5px;
     }
 
     @include desk {
-        padding-top: 12px;
         margin-top: 0;
         margin-left: 70px;
         text-align: left;
